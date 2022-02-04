@@ -21,5 +21,5 @@ pip install library_template
 [build-url]: https://github.com/0x29a/library_template/actions/workflows/build.yml
 [coverage-image]: https://codecov.io/gh/0x29a/library_template/branch/master/graph/badge.svg
 [coverage-url]: https://codecov.io/gh/0x29a/library_template
-[quality-image]: https://api.codeclimate.com/v1/badges/3af8e49ce0ce13dca358/maintainability
+[quality-image]: https://api.codeclimate.com/v1/badges/6e64bdcfef686ced4b10/maintainability
 [quality-url]: https://codeclimate.com/github/0x29a/library_template
