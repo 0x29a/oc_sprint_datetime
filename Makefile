@@ -3,7 +3,7 @@
 
 coverage:  ## Run tests with coverage
 	python -m coverage erase
-	python -m coverage run --include=cli_template/* -m pytest -ra
+	python -m coverage run --include=library_template/* -m pytest -ra
 	python -m coverage report -m
 
 deps:  ## Install dependencies
@@ -11,9 +11,9 @@ deps:  ## Install dependencies
 	python -m pip install black coverage flake8 flit mccabe mypy pylint pytest tox tox-gh-actions
 
 lint:  ## Lint and static-check
-	python -m flake8 cli_template
-	python -m pylint cli_template
-	python -m mypy cli_template
+	python -m flake8 library_template
+	python -m pylint library_template
+	python -m mypy library_template
 
 publish:  ## Publish to PyPi
 	python -m flit publish
