@@ -3,17 +3,17 @@
 
 coverage:  ## Run tests with coverage
 	python -m coverage erase
-	python -m coverage run --include=library_template/* -m pytest -ra
+	python -m coverage run --include=oc_sprint_datetime/* -m pytest -ra
 	python -m coverage report -m
 
 deps:  ## Install dependencies
 	python -m pip install --upgrade pip
-	python -m pip install black coverage flake8 flit mccabe mypy pylint pytest tox tox-gh-actions
+	python -m pip install black coverage flake8 flit mccabe mypy pylint pytest tox tox-gh-actions jira==3.2.0 python-dotenv==0.20.0
 
 lint:  ## Lint and static-check
-	python -m flake8 library_template
-	python -m pylint library_template
-	python -m mypy library_template
+	python -m flake8 oc_sprint_datetime
+	python -m pylint oc_sprint_datetime
+	python -m mypy oc_sprint_datetime
 
 publish:  ## Publish to PyPi
 	python -m flit publish
