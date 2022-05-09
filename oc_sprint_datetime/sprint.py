@@ -43,9 +43,7 @@ def get_previous_sprint():
     """
 
     current_sprint = get_current_sprint()
-    return Sprint(
-        f"{current_sprint.sprint_code}.{current_sprint.sprint_number - 1}"
-    )
+    return Sprint(f"{current_sprint.sprint_code}.{current_sprint.sprint_number - 1}")
 
 
 def get_next_sprint():
@@ -54,9 +52,7 @@ def get_next_sprint():
     """
 
     current_sprint = get_current_sprint()
-    return Sprint(
-        f"{current_sprint.sprint_code}.{current_sprint.sprint_number + 1}"
-    )
+    return Sprint(f"{current_sprint.sprint_code}.{current_sprint.sprint_number + 1}")
 
 
 class Sprint:
